@@ -1,0 +1,377 @@
+/* RESET  */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* GENERAL STYLING  */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    font-weight: 300;
+    color: var(--GRAYISH-BLUE);
+
+}
+
+h1 {
+    font-weight: 600;
+}
+
+/* BUTTON  */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: var(--WHITE);
+}
+
+.btn-1 {
+    background-color: var(--STRONG-CYAN);
+}
+
+.btn-2 {
+    background-color: var(--LIGHT-BLUE);
+}
+
+.btn:hover {
+    filter: brightness(85%);
+}
+
+
+:root {
+    /* COLORS  */
+    /* PRIMARY  */
+    --STRONG-CYAN: hsl(171, 66%, 44%);
+    --LIGHT-BLUE: hsl(233, 100%, 69%);
+
+    /* NEUTRAL  */
+    --DARK-GRAYISH-BLUE: hsl(213, 10%, 22%);
+    --GRAYISH-BLUE: hsl(201, 11%, 66%);
+    --WHITE: hsl(0, 0%, 100%);
+    --BLACK: #000;
+
+    /* FONTS  */
+
+    /* FONTS SIZE  */
+    --FONTS-SZE: 18px;
+
+    /* FONT-WEIGHT  */
+    --FW-NEUTRAL: 400;
+    --FW-BOLD: 600;
+}
+
+/* HEADER  */
+header {
+    background-image: url(../Clipboard/image/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* HEADER UITILITY CLASS  */
+.header {
+    width: min(100% - 9vw, 1200px);
+    margin-inline: auto;
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-text p .wrap {
+    display: block;
+}
+
+
+.header-text {
+    text-align: center;
+}
+
+.header-text p {
+    font-weight: 300;
+}
+
+.footer-button {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.about p h1 {
+    text-align: center;
+}
+
+.about {
+    margin-top: 4rem;
+}
+
+.about p .wrap {
+    display: block;
+    text-align: center;
+}
+
+.about h1 {
+    text-align: center;
+}
+
+
+/* MAIN  */
+
+/* SECTION 1  */
+.section-1 {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__1-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    width: min(100% -20vw);
+    margin-inline: auto
+}
+
+.section-1 span {
+    display: block;
+}
+
+.section-1 img {
+    margin-left: -30px;
+}
+
+/* SECTION-2  */
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.section-2 h1 {
+    text-transform: capitalize;
+}
+
+.section-2 span {
+    display: block;
+}
+
+.section-2 p {
+    text-align: center;
+}
+
+article {
+    text-align: center;
+}
+
+/* SECTION 2  */
+.wrapper {
+    width: min(100% - 10vw, 1200px);
+    margin-inline: auto;
+    display: flex;
+    margin-top: 4rem;
+    gap: 3rem;
+}
+
+.wraper-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+}
+
+.wraper-content p {
+    text-align: center;
+}
+
+/* SECTION IMAGES  */
+.image {
+    margin-top: 4rem;
+    width: min(100% - 9vw, 1200px);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    gap: 7rem;
+}
+
+/* SECTION FOUR  */
+.section-4 {
+    width: min(100% - 9vw, 1200px);
+    margin-inline: auto;
+    margin-top: 4rem;
+    display: flex;
+    gap: .8rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-4 span {
+    text-align: center;
+    display: block;
+}
+
+.section-4 h1 {
+    text-align: center;
+}
+
+.section-4 p {
+    text-align: center;
+}
+
+/* FOOTER  */
+footer {
+    width: min(100% - 9vw, 1200px);
+    margin-inline: auto;
+    align-items: center;
+    display: flex;
+    margin-top: 5rem;
+    gap: 8rem;
+}
+
+
+.logo {
+    cursor: pointer;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--BLACK);
+}
+
+footer a:hover {
+    color: var(--STRONG-CYAN);
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+}
+/* ICONS  */
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -4rem;
+    margin-right: 3rem;
+    gap: 2rem;
+    font-size: 1.6rem;
+}
+i:hover {
+    color: var(--STRONG-CYAN);
+}
+i {
+    
+    color: var(--BLACK);
+}
+/* MOBILE VIEW  */
+@media screen and (max-width: 560px) {
+    .footer-button {
+        flex-direction: column;
+        color: red;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    header {
+        background-image: url(../Clipboard/image/bg-header-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about p {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .section-1 {
+        flex-direction: column;
+        width: min(100% -10vw);
+        margin-inline: auto;
+    }
+
+    .section__1-content {
+        text-align: center;
+    }
+
+    .section-1 img {
+        margin: auto 15px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .image {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .section-4 span {
+        display: inline;
+    }
+    footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .footer-link {
+        align-items: center;
+    }
+    i {
+        margin-top: 3.5rem;
+        margin-bottom: 1rem;
+    }
+    .icons {
+        margin: auto 1rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-1 {
+        flex-direction: column;
+        width: min(100% -10vw);
+        margin-inline: auto;
+    }
+
+    .section__1-content {
+        text-align: center;
+    }
+
+    .section-1 img {
+        margin: auto 15px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .section-1 img {
+        margin-left: -15%;
+    }
+}
